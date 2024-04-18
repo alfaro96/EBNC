@@ -1600,6 +1600,10 @@ public class wdBayes extends AbstractClassifier implements OptionHandler {
 		return m_Instances;
 	}
 
+	public ObjectiveFunction getObjectiveFunction() {
+		return function_to_optimize;
+	}
+
 	public int[] getM_Order() {
 		return m_Order;
 	}
