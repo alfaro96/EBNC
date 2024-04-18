@@ -33,7 +33,7 @@
             <artifactId>jayes</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jayes.jar</systemPath>
+            <systemPath>${pom.basedir}/lib/jayes.jar</systemPath>
         </dependency>
         <!-- Google -->
         <dependency>
@@ -47,7 +47,7 @@
             <artifactId>jgrapht</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jgrapht-jdk1.6.jar</systemPath>
+            <systemPath>${pom.basedir}/lib/jgrapht-jdk1.6.jar</systemPath>
         </dependency>
         <!-- Unknown -->
         <dependency>
@@ -55,7 +55,7 @@
             <artifactId>jniwrapper</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jniwrapper.jar</systemPath>
+            <systemPath>${pom.basedir}/lib/jniwrapper.jar</systemPath>
         </dependency>
         <!-- Weka -->
         <dependency>
