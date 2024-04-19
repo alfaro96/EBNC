@@ -800,9 +800,6 @@ public class wdBayes extends AbstractClassifier implements OptionHandler {
 			System.out.println(m_P + " is not vallid learning scheme");
 			System.out.println("m_P value should be from set {MAP, dCCBN, wCCBN, eCCBN}");
 		}
-
-		// free up some space
-		m_Instances = new Instances(m_Instances, 0);
 	}
 
 	/*
