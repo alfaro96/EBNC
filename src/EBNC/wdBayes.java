@@ -125,7 +125,7 @@ public class wdBayes extends AbstractClassifier implements OptionHandler {
 
 	private ObjectiveFunction function_to_optimize;
 	private double maxGradientNorm = 0.000000000000000000000000000000001;
-	private int m_MaxIterations = 10000;
+	private int m_MaxIterations = 10000; // -I
 	//private int m_MaxIterations = 100;
 
 	private int m_WeightingInitialization = 0; 	        								// -W 0, -1 for initialization to MAP estimates
@@ -1548,6 +1548,11 @@ public class wdBayes extends AbstractClassifier implements OptionHandler {
 			m_Lambda = (Double.valueOf(strL));
 		}
 
+		String strI = Utils.getOption('I', options);
+		if (strI.length() != 0) {
+			m_MaxIterations = (Integer.valueOf(strI));
+		}
+
 		Utils.checkForRemainingOptions(options);
 	}
 
@@ -1629,4 +1634,7 @@ public class wdBayes extends AbstractClassifier implements OptionHandler {
 		this.m_WeightingInitialization = m_WeightingInitialization;
 	}
 
+	public int getM_MaxIterations() {
+		return m_MaxIterations;
+	}
 }
