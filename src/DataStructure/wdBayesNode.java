@@ -14,11 +14,11 @@ public class wdBayesNode {
 
 	public double[] xyBuffer;		// Count for x val and the y val
 	
-	wdBayesNode[] children;	
+	public wdBayesNode[] children;	
 
 	public int att;          // the Attribute whose values select the next child
 	public int index;
-	private int paramsPerAttVal;
+	public int paramsPerAttVal;
 
 	public int scheme;
 

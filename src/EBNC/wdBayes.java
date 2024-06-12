@@ -210,7 +210,7 @@ public class wdBayes extends AbstractClassifier implements OptionHandler {
 			dParameters_.computeFullMI();
 			//for (int u = 0; u < nAttributes; u++) {
 			//	System.out.println("Att:" + u + ", Mutual Information is: " + Arrays.toString(dParameters_.getFullMutualInfomation()[u]));
-			//}
+			//}	
 
 			if (m_MutualInformationBasedWeighting == 0) {
 				System.out.println("Converting Counts to NB Probabilties");

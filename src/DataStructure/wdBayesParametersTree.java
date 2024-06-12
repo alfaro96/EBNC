@@ -11,7 +11,7 @@ public class wdBayesParametersTree {
 	private double[] parameters;
 	private int np;
 
-	private wdBayesNode[] wdBayesNode_;
+	public wdBayesNode[] wdBayesNode_;
 	private int[] activeNumNodes;
 
 	private int N;
@@ -25,7 +25,7 @@ public class wdBayesParametersTree {
 
 	private int scheme;
 
-	private double[] classCounts;
+	public double[] classCounts;
 	private double[] classBuffer;
 
 	double[]  mi;
@@ -100,7 +100,7 @@ public class wdBayesParametersTree {
 	public void updateAttributeTrie(Instance instance, int i, int u, int[] lparents) {
 
 		int x_C = (int) instance.classValue();
-		int x_u = (int) instance.value(u);		
+		int x_u = (int) instance.value(u);
 
 		wdBayesNode_[i].incrementXYCount(x_u, x_C);	
 
