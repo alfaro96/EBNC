@@ -1212,6 +1212,22 @@ public class wdBayesParametersTree {
 		return n;
 	}
 
+	public int getNc() {
+		return this.nc;
+	}
+
+	public int[] getM_ParamsPerAtt() {
+		return m_ParamsPerAtt;
+	}
+
+	public int[] getOrder() {
+		return order;
+	}
+
+	public int[][] getParents() {
+		return parents;
+	}
+
 	public double getNLL_MAP(Instances instances) {
 
 		double nll = 0;
