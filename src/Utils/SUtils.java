@@ -20,7 +20,7 @@ public class SUtils {
 	}
 
 	public static double MEsti(double freq1, double freq2, double numValues) {
-		double m_MEsti = 1.0;
+		double m_MEsti = 0.0;
 		double mEsti = (freq1 + m_MEsti / numValues) / (freq2 + m_MEsti);
 		return mEsti;
 	}
